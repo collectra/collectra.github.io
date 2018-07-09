@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Collectra</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <section class="hero is-medium is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-8-desktop is-offset-2-desktop">
+              <h1 class="title is-2 is-spaced">
+                Welcome to Collectra!
+              </h1>
+              <h2 class="subtitle is-4">
+                Collectra provides useful statistics about jailbroken devices to tweak developers, including the most popular <strong>device models</strong>,
+                <strong>iOS versions</strong> and deployed <strong>Electra versions</strong>.
+                <br /><br />
+                <div id="num_wrapper" class="has-text-weight-semibold" style="visibility: hidden">Currently, there are <code id="num_devices"></code> devices running Electra.</div>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <div class="content columns has-text-centered">
+              <div class="column">
+                <h4>Device breakdown by models</h4>
+                <canvas width="100%" height="100%" id="devices-breakdown">
+                </div>
+              <div class="column">
+                  <h4>Device breakdown by iOS versions</h4>
+                <canvas width="100%" height="100%" id="version-breakdown"></canvas>
+              </div>
+              <div class="column">
+                <h4>Device breakdown by Electra versions</h4>
+                <canvas width="100%" height="100%" id="electra-version-breakdown"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer has-text-centered">
+      <div class="container">
+         <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <p>
+              <strong class="has-text-weight-semibold">
+                Powered by the <a href="https://github.com/ur0/collectra">Collectra backend</a>
+              </strong>
+              <br />
+              <small>Data updated every 5 minutes</small>
+            </p>
+            <p>
+              <small>
+                Copyright © <a href="https://about.umangis.me/">Umang Raghuvanshi</a> 2018.
+                Source code licensed under the <a href="http://opensource.org/licenses/mit-license.php">MIT</a> license.
+              </small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js" integrity="sha256-XF29CBwU1MWLaGEnsELogU6Y6rcc5nCkhhx89nFMIDQ=" crossorigin="anonymous"></script>
+    <script src="https://google.github.io/palette.js/palette.js"></script>
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
+</html>
