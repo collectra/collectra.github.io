@@ -1,1 +1,3 @@
-Start package for [Bulma](http://bulma.io)
+# Collectra
+
+Frontend for [Collectra](https://github.com/ur0/collectra).
